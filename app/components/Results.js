@@ -6,8 +6,9 @@ var Link = require('react-router-dom').Link;
 var PlayerPreview = require('./PlayerPreview');
 
 function Profile(props) {
+	var info = props.info;
 	return (
-		<PlayerPreview avatar={info.avatar.url} username={info.login}>
+		<PlayerPreview avatar={info.avatar_url} username={info.login}>
       <ul className='space-list-items'>
         {info.name && <li>{info.name}</li>}
         {info.location && <li>{info.location}</li>}
@@ -23,7 +24,7 @@ function Profile(props) {
 
 Profile.propTypes = {
 	info: PropTypes.object.isRequired
-},
+}
 
 function Player(props) {
 	return (
