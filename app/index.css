@@ -142,3 +142,15 @@ a {
 .reset:hover {
 	cursor: pointer;
 }
+
+.smallSpacer {
+	padding-top: 20px;
+}
+
+.bigSpacer {
+	padding-top: 50px;
+}
+
+.midSpacerInv {
+	padding-bottom: 30px;
+}

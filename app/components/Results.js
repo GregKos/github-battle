@@ -62,7 +62,7 @@ class Results extends React.Component {
 			if (results === null) {
 				this.setState(function(results) {
 					return {
-						error: 'Looks like there was an error. Check that both users exist on GitHub',
+						error: 'Looks like there was an error. Please check that both users exist on GitHub!',
 						loading: false
 					}
 				});
@@ -90,24 +90,33 @@ class Results extends React.Component {
 		if(error) {
 			return (
 				<div>
-					<p>{error}</p>
-					<Link to='/battle'>Reset</Link>
+					<div className='row'>
+						<p>{error}</p>
+					</div>
+					<div className='row'>
+						<Link to='/battle'>Reset</Link>
+					</div>
 				</div>
 			)
 		}
 
 		return (
-			<div className='row'>
-				<Player
-					label='Winner'
-					score={winner.score}
-					profile={winner.profile}
-				/>
-				<Player
-					label='Loser'
-					score={loser.score}
-					profile={loser.profile}
-				/>
+			<div>
+				<div className='row'>
+					<Player
+						label='Winner'
+						score={winner.score}
+						profile={winner.profile}
+					/>
+					<Player
+						label='Loser'
+						score={loser.score}
+						profile={loser.profile}
+					/>
+				</div>
+				<div className='row'>
+					<Link className='reset smallSpacer' to='/battle'>Reset</Link>
+				</div>
 			</div>
 		)
 	}
