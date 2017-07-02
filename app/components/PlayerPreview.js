@@ -1,3 +1,9 @@
+/**
+	*	A component for styling user appearance.
+	*	Displays the avatar and username for a given user.
+	* Allows for any extra data as props.children
+	*/
+
 var React = require('react');
 var PropTypes = require('prop-types');
 

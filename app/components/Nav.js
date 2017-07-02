@@ -1,3 +1,9 @@
+/**
+	*	Simple navbar component
+	*	Displays a navigation bar at the top left corner of the page.
+	*	List is style: none, so they appear as simple links.
+	*/
+
 var React = require('react');
 var NavLink = require('react-router-dom').NavLink;
 

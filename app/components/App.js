@@ -1,3 +1,8 @@
+/**
+	*	The main App component.
+	*	The backbone of the app, contains the Switch and Routes from React Router.
+	*/
+
 var React = require('react');
 var ReactRouter = require('react-router-dom')
 var Router = ReactRouter.BrowserRouter;

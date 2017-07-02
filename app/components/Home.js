@@ -1,3 +1,8 @@
+/**
+	*	A fairly straightforward Home component.
+	*	Displays a homepage with information about the app and links for other components.
+	*/
+
 var React = require('react');
 var Link = require('react-router-dom').Link;
 

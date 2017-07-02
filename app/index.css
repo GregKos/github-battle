@@ -1,79 +1,73 @@
+/* Font settings */
 body {
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
 }
-
+/* List styling remover */
 ul {
 	padding: 0;
 }
-
 li {
 	list-style-type: none;
 }
-
+/* Link styling */
 a {
 	text-decoration: none;
 	color: #d0021b;
 }
-
+/* Main container settings */
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+/* Language selector settings */
 .languages {
 	display: flex;
 	justify-content: center;
 }
-
 .languages li {
 	margin: 10px;
 	font-weight: bold;
 	cursor: pointer;
 }
-
+/* Popular repos styling */
 .popular-list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-
 .popular-item {
 	margin: 20px;
 	text-align: center;
 }
-
 .space-list-items {
 	margin-bottom: 7px;
 }
-
 .popular-rank {
 	font-size: 20px;
 	margin: 10px;
 }
-
+/* Img styling for all user avatars */
 .avatar {
 	width: 150px;
 	border-radius: 50%;
 }
-
+/* Navbar styling */
 .nav {
 	display: flex;
 }
-
 .nav li {
 	margin-right: 15px;
 }
-
 .active {
 	font-weight: bold;
 }
-
+/* Center content inside home container */
 .home-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
+/* Button styling */
 .button {
   color: #e6e6e6;
   background: #0a0a0a;
@@ -86,29 +80,27 @@ a {
   padding: 7px 0;
   margin: 10px auto;
 }
-
 .button:hover {
   background: linear-gradient(#1a1a1a,#0a0a0a);
   color: #fff;
   text-decoration: none;
 }
-
 .button:active {
   transform: translateY(1px);
 }
-
+/* Row alignment */
 .row {
 	display: flex;
 	justify-content: space-around;
 }
-
+/* Column alignment */
 .column {
 	display: flex;
 	flex-direction: column;
 	width: 500px;
 	align-items: center;
 }
-
+/* Input field styling */
 .column input {
 	border-radius: 3px;
 	margin: 10px 0;
@@ -117,19 +109,19 @@ a {
 	font-size: 16px;
 	width: 80%;
 }
-
+/* Label styling */
 .column label {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 200;
 }
-
+/* Header styling, h1 without weird margins */
 .header {
 	text-align: center;
 	font-size: 30px;
 	font-weight: 200;
 }
-
+/* Reset button styling */
 .reset {
 	border: none;
 	background: transparent;
@@ -138,19 +130,16 @@ a {
 	width: 100%;
 	text-align: center;
 }
-
 .reset:hover {
 	cursor: pointer;
 }
-
+/* Padding fixers */
 .smallSpacer {
 	padding-top: 20px;
 }
-
 .bigSpacer {
 	padding-top: 50px;
 }
-
 .midSpacerInv {
 	padding-bottom: 30px;
 }
